@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JavaScript Multiplication</title>
+  <title>Learning to use Object create method: see console</title>
 </head>
 <body>
-  <h1>Multiplication Output</h1>
+  <h1>Inheritence</h1>
   <p id="output"></p>
 
   <script>
-    const result = 5 * "2";
-    document.getElementById("output").textContent = `The result of 5 * "2" is: ${result}`;
+    const animal = {
+        makeSound: function(){
+            console.log("Some animal sound!");
+        }
+    };
+    const dog = Object.create(animal);
+    dog.makeSound = function(){
+        console.log("Bark!");
+    };
+    animal.makeSound();
+    dog.makeSound();
   </script>
 </body>
 </html>
