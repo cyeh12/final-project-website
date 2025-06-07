@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DOM Manipulation</title>
+  <title>Definition List Example</title>
 </head>
 <body>
-  <h1>DOM Manipulation</h1>
-  <button id="btn">Click me</button>
-  <p id="output">Status: Waiting...</p>
-  <script>
-    const button = document.getElementById("btn");
-    const output = document.getElementById("output");
-    button.addEventListener("click", () => {
-      output.textContent = "Status: Clicked!";
-      output.style.color = "green";
-    });
-  </script>
+  <h1>Web Development Terms</h1>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language, the standard markup language for creating web pages.</dd>
+    
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets, a style sheet language used for describing the presentation of a document written in HTML.</dd>
+    
+    <dt>JavaScript</dt>
+    <dd>A programming language that enables interactive web pages; it is an essential part of web applications.</dd>
+    
+    <dt>Responsive Design</dt>
+    <dd>A design approach that ensures web pages render well on a variety of devices and window or screen sizes.</dd>
+  </dl>
 </body>
 </html>
