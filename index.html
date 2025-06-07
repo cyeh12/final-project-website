@@ -2,24 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Learning to use Object create method: see console</title>
+  <title>DOM Manipulation</title>
 </head>
 <body>
-  <h1>Inheritence</h1>
-  <p id="output"></p>
-
+  <h1>DOM Manipulation</h1>
+  <button id="btn">Click me</button>
+  <p id="output">Status: Waiting...</p>
   <script>
-    const animal = {
-        makeSound: function(){
-            console.log("Some animal sound!");
-        }
-    };
-    const dog = Object.create(animal);
-    dog.makeSound = function(){
-        console.log("Bark!");
-    };
-    animal.makeSound();
-    dog.makeSound();
+    const button = document.getElementById("btn");
+    const output = document.getElementById("output");
+    button.addEventListener("click", () => {
+      output.textContent = "Status: Clicked!";
+      output.style.color = "green";
+    });
   </script>
 </body>
 </html>
