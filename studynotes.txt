@@ -1,0 +1,9 @@
+Check if node is installed by using 
+node -v
+npm create vite@latest
+Selected React as framework and Typescript as variant
+cd to project folder
+npm install
+npm run dev
+Website is located at http://localhost:XXXX/
+
