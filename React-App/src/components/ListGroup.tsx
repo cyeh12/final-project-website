@@ -1,12 +1,16 @@
 function ListGroup() {
+	let items = ["Town 1", "Town 2", "Town 3"]
+	// items = [];
+	if (items.length===0) {
+		return <p>no item founds</p>
+	}
 	return( 
-		<ul className="list-group">
-			<li className="list-group-item">An item</li>
-	    		<li className="list-group-item">A second item</li>
-	      		<li className="list-group-item">A third item</li>
-	        	<li className="list-group-item">A fourth item</li>
-		  	<li className="list-group-item">And a fifth one</li>
-		</ul>
+		<>
+			<h1>This is List group title</h1>	
+			<ul className="list-group">
+				{items.map(item => <li key={item} className="list-group-item">{item}</li>)}
+			</ul>
+		</>	
 	);
 }
 
